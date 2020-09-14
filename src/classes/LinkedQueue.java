@@ -58,6 +58,16 @@ public class LinkedQueue<T>
 		
 		return rValue;
 	}
+	
+	public T peek() 
+	{
+		if (isEmpty())
+		{
+			throw new NullPointerException("The LinkedList might not have been initialized");
+		}
+		
+		return head.value;
+	}
 
 	public boolean isEmpty() 
 	{
